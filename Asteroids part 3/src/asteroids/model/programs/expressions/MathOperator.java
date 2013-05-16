@@ -6,4 +6,9 @@ public abstract class MathOperator extends Expression {
 	}
 	
 	public abstract Expression getValue();
+	
+	@Override
+	public String toString() {
+		return (getDouble(this.getValue()).toString());
+	}
 }

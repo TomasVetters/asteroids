@@ -8,4 +8,6 @@ public class Mul extends MathBinary {
 	public Expression getValue() {
 		return new DoubleLiteral(this.getLine(), this.getColumn(), ((DoubleLiteral) (this.getE1())).getDouble()*((DoubleLiteral) (this.getE2())).getDouble());
 	}
+	
+	
 }

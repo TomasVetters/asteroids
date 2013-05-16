@@ -14,4 +14,8 @@ public class Add extends MathBinary {
 			return new Add(this.getE1().getValue(), this.getE2().getValue(),this.getLine(), this.getColumn());
 		}
 	}
+	
+	
+	
+	
 }

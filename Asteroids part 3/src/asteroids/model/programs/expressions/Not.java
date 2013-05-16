@@ -10,5 +10,10 @@ public class Not extends LogicalUnary {
 	@Override
 	public Expression getValue() {
 		return new BooleanLiteral(this.getLine(), this.getColumn(), !((BooleanLiteral) (this.getE())).getBool());
-	}	
+	}
+	
+	@Override
+	public String toString() {
+		
+	}
 }

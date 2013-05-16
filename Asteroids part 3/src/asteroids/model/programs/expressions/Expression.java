@@ -27,4 +27,11 @@ public abstract class Expression {
 	}
 	
 	public abstract Expression getValue();
+	
+	protected DoubleLiteral getDouble(Expression number) {
+		while(!(number instanceof DoubleLiteral)) {
+			number = number.getValue();
+		}
+		return (DoubleLiteral) number;
+	}
 }
